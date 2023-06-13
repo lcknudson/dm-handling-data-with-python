@@ -147,9 +147,18 @@ friends = ['Joe', 'Sally', 'Camilo', 'Perry', 'Susan']
 # Problem 12
 # Research to find the Python method that allows you to add an element to the end of the array (similar to push() in JavaScript), then add a name to the end of the `friends` array.
 
+def add_friend(name):
+    friends.append(name)
+    # print(friends)
+
+# add_friend('Emma') #This works
+
 
 # Problem 13
 # Print out the total amount of elements in the `friends` array. The Python method you are looking for is similar to the JavaScript property `.length`.
+
+list_size = len(friends)
+print(list_size)
 
 
 # Problem 14
@@ -158,3 +167,6 @@ friends = ['Joe', 'Sally', 'Camilo', 'Perry', 'Susan']
 
 # Problem 15
 # Remove the last item in the array (try to think about how you can do this dynamically, meaning, if the array contents were to change, your code would still work).
+
+for name in friends:
+    print(name)
