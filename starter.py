@@ -103,12 +103,40 @@ score = 74
 
 # Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console-log an 'A', between 80 and 89, console-log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console-log an 'F'.
 
+if score >= 90:
+    print('A')
+elif score >= 80 and score <= 89:
+    print('B')
+elif score >= 70 and score <= 79:
+    print('C')
+elif score >= 60 and score <= 69:
+    print('D')
+elif score < 60:
+    print('F')
+else:
+    print("Invalid, Mr. Spock.")
+
 
 
 
 # Problem 11
 # Create a variable called 'changeMyMind' and set it equal to true. 
 # Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
+
+changeMyMind = True
+
+if changeMyMind == True:
+    # print("First Value:", changeMyMind)
+    changeMyMind = False
+    # print("Second Value:", changeMyMind)
+elif changeMyMind == False: 
+    # print("Third Value:", changeMyMind)
+    changeMyMind = True
+    # print("Fourth Value:", changeMyMind)
+else:
+    print("Wrong input again, Captain Kirk.")
+
+
 
 
 # ADVANCED
