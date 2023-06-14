@@ -158,15 +158,28 @@ def add_friend(name):
 # Print out the total amount of elements in the `friends` array. The Python method you are looking for is similar to the JavaScript property `.length`.
 
 list_size = len(friends)
-print(list_size)
+# friends_index = friends.index(e) # perhaps flesh this out later...
+print("Length of friends list:", list_size)
 
 
 # Problem 14
 # Add a name into the third position in the array (index 2). Make sure you are not overwriting the value that is already there.
 
+def insert_friend(name):
+    friends.insert(2, name)
+
+# insert_friend("Laila")
+
 
 # Problem 15
 # Remove the last item in the array (try to think about how you can do this dynamically, meaning, if the array contents were to change, your code would still work).
 
+print("original friends list:", friends)
+
+ele = friends.pop() #This is the code that removes the last item in the list (array)
+
+print("New friends list", friends)
+
+# Extra code
 for name in friends:
     print(name)
